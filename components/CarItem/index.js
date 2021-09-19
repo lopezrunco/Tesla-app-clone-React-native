@@ -6,7 +6,7 @@ import styles from './styles'
 const CarItem = (props) => {
 
     {/* Importamos las props */}
-    const { name, tagLine, tagLineCTA, image} = props
+    const { name, tagline, taglineCTA, image} = props.car
 
     return (
 
@@ -20,10 +20,10 @@ const CarItem = (props) => {
             <View style={styles.titles}>
                 <Text style={styles.title}>{name}</Text>
                 <Text style={styles.subtitle}>
-                    {tagLine}
+                    {tagline}
                     {' '}
                     <Text style={styles.subtitleCTA}>
-                        {tagLineCTA}
+                        {taglineCTA}
                     </Text>
                 </Text>
             </View>
